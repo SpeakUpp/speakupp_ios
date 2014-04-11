@@ -1,0 +1,9 @@
+[submodule "Vendors/AFNetworking"]
+	path = Vendors/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "Vendors/Underscore.m"]
+	path = Vendors/Underscore.m
+	url = https://github.com/robb/Underscore.m.git
+[submodule "Vendors/RESideMenu"]
+	path = Vendors/RESideMenu
+	url = https://github.com/romaonthego/RESideMenu.git
