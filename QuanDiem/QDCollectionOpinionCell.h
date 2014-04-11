@@ -19,6 +19,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *opinionCreatedAtLabel;
 @property (strong, nonatomic) IBOutlet UIButton *opinionUserButton;
 
-@property (strong, nonatomic) NSDictionary *opinion;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintOverlay;
+
+@property (strong, nonatomic) NSMutableDictionary *opinion;
+- (IBAction)touchAgree:(id)sender;
+- (IBAction)touchDisagree:(id)sender;
 
 @end

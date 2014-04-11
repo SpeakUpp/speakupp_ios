@@ -93,19 +93,19 @@
         <scene sceneID="Kao-oz-Z4m">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Ppd-7E-D6z" customClass="QDCollectionOpinionController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="YdN-gp-lhp">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="interactive" dataMode="prototypes" id="YdN-gp-lhp">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="UgX-YK-BZl">
                             <size key="itemSize" width="280" height="320"/>
-                            <size key="headerReferenceSize" width="0.0" height="20"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OpinionCell" id="Px3-Ek-ISE" customClass="QDCollectionOpinionCell">
-                                <rect key="frame" x="20" y="20" width="280" height="320"/>
+                                <rect key="frame" x="20" y="10" width="280" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="320"/>
@@ -114,6 +114,10 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-e9-WBn">
                                             <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="280" id="PhF-8c-ppJ"/>
+                                                <constraint firstAttribute="width" constant="280" id="ke0-G2-WHY"/>
+                                            </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-rZ-Pi2" userLabel="View Overlay">
                                             <rect key="frame" x="0.0" y="145" width="280" height="135"/>
@@ -210,23 +214,22 @@
                                                     <rect key="frame" x="8" y="8" width="112" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
                                                     <state key="normal" title="ĐỒNG Ý">
                                                         <color key="titleColor" red="0.11764705882352941" green="0.81568627450980391" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="selected">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
+                                                    <connections>
+                                                        <action selector="touchAgree:" destination="Px3-Ek-ISE" eventType="touchUpInside" id="1y3-Co-J5R"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-vc-Qte">
                                                     <rect key="frame" x="128" y="8" width="112" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
                                                     <state key="normal" title="PHẢN ĐỐI">
                                                         <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,33 +240,46 @@
                                                     <state key="highlighted">
                                                         <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="touchDisagree:" destination="Px3-Ek-ISE" eventType="touchUpInside" id="677-5j-nsP"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-gW-gna">
                                                     <rect key="frame" x="248" y="8" width="24" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.94509810209274292" green="0.94509810209274292" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="KqR-EV-kfJ"/>
+                                                <constraint firstAttribute="width" constant="280" id="mhs-Qb-npk"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94509810209274292" green="0.94509810209274292" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Iy7-rZ-Pi2" secondAttribute="bottom" constant="40" id="3Oe-bJ-wnU"/>
+                                    <constraint firstItem="8Mb-e9-WBn" firstAttribute="leading" secondItem="Px3-Ek-ISE" secondAttribute="leading" id="3f7-Qa-9cK"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Mb-e9-WBn" secondAttribute="trailing" id="46u-8n-5sN"/>
                                     <constraint firstItem="8Mb-e9-WBn" firstAttribute="top" secondItem="Px3-Ek-ISE" secondAttribute="top" id="4AC-vj-aBO"/>
                                     <constraint firstAttribute="bottom" secondItem="Dlo-tM-Uwh" secondAttribute="bottom" id="5Kn-oK-uu8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dlo-tM-Uwh" secondAttribute="bottom" id="7hQ-sj-6ri"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dlo-tM-Uwh" secondAttribute="trailing" id="EQd-TP-2Aq"/>
                                     <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="trailing" secondItem="Dlo-tM-Uwh" secondAttribute="trailing" id="Fyj-RF-yY1"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Mb-e9-WBn" secondAttribute="bottom" constant="40" id="MD3-sP-bB5"/>
                                     <constraint firstAttribute="trailing" secondItem="Iy7-rZ-Pi2" secondAttribute="trailing" id="MyJ-co-IIF"/>
-                                    <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="bottom" secondItem="8Mb-e9-WBn" secondAttribute="bottom" id="ODq-da-9LC"/>
+                                    <constraint firstItem="Dlo-tM-Uwh" firstAttribute="top" secondItem="Px3-Ek-ISE" secondAttribute="top" constant="280" id="OYg-dj-Evz"/>
                                     <constraint firstItem="Dlo-tM-Uwh" firstAttribute="top" secondItem="Iy7-rZ-Pi2" secondAttribute="bottom" id="OtW-M2-K7B"/>
                                     <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="leading" secondItem="Px3-Ek-ISE" secondAttribute="leading" id="PIO-n8-B77"/>
+                                    <constraint firstItem="8Mb-e9-WBn" firstAttribute="top" secondItem="Px3-Ek-ISE" secondAttribute="top" id="To9-Eh-NTT"/>
                                     <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="leading" secondItem="Dlo-tM-Uwh" secondAttribute="leading" id="bDa-Hm-3o8"/>
-                                    <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="trailing" secondItem="8Mb-e9-WBn" secondAttribute="trailing" id="pXy-DC-PB8"/>
-                                    <constraint firstItem="Iy7-rZ-Pi2" firstAttribute="leading" secondItem="8Mb-e9-WBn" secondAttribute="leading" id="ueP-KO-BUH"/>
+                                    <constraint firstItem="Dlo-tM-Uwh" firstAttribute="leading" secondItem="Px3-Ek-ISE" secondAttribute="leading" id="ybp-C1-XCB"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="agreeButton" destination="SKI-k4-W0N" id="cjU-kO-3hc"/>
+                                    <outlet property="constraintOverlay" destination="3Oe-bJ-wnU" id="oLI-4p-1vK"/>
                                     <outlet property="disagreeButton" destination="UfK-vc-Qte" id="WGh-GC-zrb"/>
                                     <outlet property="opinionCreatedAtLabel" destination="Yml-AO-iGa" id="eVg-z1-Twq"/>
                                     <outlet property="opinionImageView" destination="8Mb-e9-WBn" id="8ca-f0-S4J"/>
@@ -275,10 +291,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="Fkh-5G-0m4">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="Ppd-7E-D6z" id="diw-Jj-wYm"/>
                             <outlet property="delegate" destination="Ppd-7E-D6z" id="rEn-UG-Qnt"/>

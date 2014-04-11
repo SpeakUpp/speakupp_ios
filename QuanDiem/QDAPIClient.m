@@ -21,7 +21,7 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"http://quandiem.net/api/
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedClient = [[QDAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
-        [_sharedClient setResponseSerializer:[AFJSONResponseSerializer serializer]];
+        _sharedClient.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions: NSJSONReadingMutableContainers];
         [_sharedClient setSecurityPolicy:[AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey]];
     });
     

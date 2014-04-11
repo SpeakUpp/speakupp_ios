@@ -99,4 +99,24 @@
     }
     [self loadData:NO];
 }
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if (!decelerate) {
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"OpinionShowStats"
+         object:self];
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"OpinionHideStats"
+     object:self];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"OpinionShowStats"
+     object:self];
+}
 @end
