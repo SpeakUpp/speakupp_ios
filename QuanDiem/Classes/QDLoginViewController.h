@@ -11,11 +11,5 @@
 @interface QDLoginViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *labelEmail;
 @property (weak, nonatomic) IBOutlet UITextField *labelPassword;
-@property (weak, nonatomic) IBOutlet UIButton *buttonLogin;
-@property (weak, nonatomic) IBOutlet UIButton *buttonFacebook;
-@property (weak, nonatomic) IBOutlet UIButton *buttonTwitter;
-- (IBAction)touchFacebook:(id)sender;
-- (IBAction)touchTwitter:(id)sender;
-- (IBAction)touchLogin:(id)sender;
 
 @end

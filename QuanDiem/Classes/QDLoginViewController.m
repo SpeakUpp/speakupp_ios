@@ -45,13 +45,7 @@
 }
 
 - (IBAction)touchLogin:(id)sender {
-    QDAPIClient *api = [QDAPIClient sharedClient];
-    NSDictionary *params = @{@"email": _labelEmail.text,
-                             @"password": _labelPassword.text};
-    [api POST:@"user/login" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *data) {
-        NSLog(@"%@", data);
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } failure:nil];
+    
 }
 
 - (void)sessionStateChanged:(FBSession *)session
@@ -92,5 +86,26 @@
        FBSessionState state, NSError *error) {
          [self sessionStateChanged:session state:state error:error];
      }];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            [self openSession];
+        } else {
+            
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 2) {
+            QDAPIClient *api = [QDAPIClient sharedClient];
+            NSDictionary *params = @{@"email": _labelEmail.text,
+                                     @"password": _labelPassword.text};
+            [api POST:@"user/login" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *data) {
+                NSLog(@"%@", data);
+                [self dismissViewControllerAnimated:YES completion:nil];
+            } failure:nil];
+        }
+    } else if (indexPath.section == 2) {
+    }
 }
 @end
