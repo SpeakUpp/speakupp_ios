@@ -11,5 +11,6 @@
 @interface QDUtils : NSObject
 
 + (NSURL*)urlForImage:(NSDictionary*)object ofSize:(NSInteger)size;
++ (NSString*)friendlyDate:(NSString*)dateString;
 
 @end

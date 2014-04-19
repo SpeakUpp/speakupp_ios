@@ -62,17 +62,38 @@
     _opinion = opinion;
     
     [_opinionButton setBackgroundImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:opinion ofSize:280]];
-    [_userImageView setImageWithURL:[QDUtils urlForImage:opinion[@"user"] ofSize:24] placeholderImage:nil];
+    [_opinionUserButton2 setImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:opinion[@"user"] ofSize:24] placeholderImage:nil];
     [_opinionUserButton setImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:opinion[@"user"] ofSize:30] placeholderImage:nil];
     _opinionTitleLabel.text = _opinion[@"title"];
 
     _opinionUserButton.layer.cornerRadius = 15;
-    _opinionUserButton.layer.masksToBounds = YES;
-    _userImageView.layer.cornerRadius = 12;
-    _userImageView.layer.masksToBounds = YES;
+    _opinionUserButton2.layer.cornerRadius = 12;
+    
+    _opinionUserLabel.text = [NSString stringWithFormat:NSLocalizedString(@"POSTED_BY_NAME", @"Posted by @%d"), _opinion[@"user"][@"displayName"]];
+    _opinionCreatedAtLabel.text = [QDUtils friendlyDate:_opinion[@"created"]];
+    
+    NSInteger commentCount = [_opinion[@"commentCount"] integerValue];
+    NSString *commentString;
+    if (commentCount > 1 ) {
+        commentString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_COMMENTS", @"%d comments"), commentCount];
+    } else {
+        commentString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_COMMENT", @"%d comment"), commentCount];
+    }
+    
+    NSInteger voteCount = [_opinion[@"voteCount"] integerValue];
+    NSString *voteString;
+    if (voteCount > 1 ) {
+        voteString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_VOTES", @"%d votes"), voteCount];
+    } else {
+        voteString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_VOTE", @"%d vote"), voteCount];
+    }
+    
+    _opinionStatsLabel.text = [NSString stringWithFormat:@"%@ / %@", commentString, voteString];
     
     _agreeButton.selected = NO;
     _disagreeButton.selected = NO;
+    _agreePercent.text = [NSString stringWithFormat:@"%d%%", [opinion[@"agreePercent"] integerValue]];
+    _disagreePercent.text = [NSString stringWithFormat:@"%d%%", [opinion[@"disagreePercent"] integerValue]];
     
     _constraintOverlay.constant = -55;
 
@@ -84,6 +105,9 @@
             _agreeButton.selected = YES;
         }
     }
+    
+    CGFloat agreePercent = [opinion[@"agreePercent"] floatValue] / 100.0 * 260.0;
+    _constraintVotePercent.constant = agreePercent;
 }
 
 /*

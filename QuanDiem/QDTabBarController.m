@@ -33,6 +33,8 @@
         if (!user) {
             [self performSegueWithIdentifier:@"Login" sender:self];
         }
+        UIViewController *tmp = self.viewControllers[2];
+        tmp.tabBarItem.badgeValue = @"5";
         
     } failure:nil];
 }

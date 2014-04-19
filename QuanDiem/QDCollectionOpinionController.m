@@ -10,6 +10,7 @@
 #import "QDAPIClient.h"
 #import "QDCollectionOpinionCell.h"
 #import "QDOpinionViewController.h"
+#import "QDProfileViewController.h"
 
 #import "Underscore.h"
 
@@ -74,6 +75,9 @@
     QDCollectionOpinionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"OpinionCell" forIndexPath:indexPath];
     cell.opinion = opinions[indexPath.item];
     cell.opinionButton.tag = indexPath.item;
+    cell.opinionUserButton.tag = indexPath.item;
+    cell.opinionUserButton2.tag = indexPath.item;
+
     return cell;
 }
 
@@ -131,6 +135,10 @@
         UIButton *btn = (UIButton*)sender;
         QDOpinionViewController *opinionViewController = (QDOpinionViewController*)segue.destinationViewController;
         opinionViewController.opinion = opinions[btn.tag];
+    } else if ([segue.identifier isEqualToString:@"Profile"]) {
+        UIButton *btn = (UIButton*)sender;
+        QDProfileViewController *profileViewController = (QDProfileViewController*)segue.destinationViewController;
+        profileViewController.profile = opinions[btn.tag][@"user"];
     }
 }
 

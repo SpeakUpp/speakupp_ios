@@ -11,18 +11,23 @@
 @interface QDCollectionOpinionCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIButton *opinionButton;
 
-@property (strong, nonatomic) IBOutlet UIButton *agreeButton;
-@property (strong, nonatomic) IBOutlet UIButton *disagreeButton;
-@property (strong, nonatomic) IBOutlet UIImageView *userImageView;
-@property (strong, nonatomic) IBOutlet UILabel *opinionTitleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *opinionStatsLabel;
-@property (strong, nonatomic) IBOutlet UILabel *opinionUserLabel;
-@property (strong, nonatomic) IBOutlet UILabel *opinionCreatedAtLabel;
-@property (strong, nonatomic) IBOutlet UIButton *opinionUserButton;
+@property (weak, nonatomic) IBOutlet UILabel *agreePercent;
+@property (weak, nonatomic) IBOutlet UILabel *disagreePercent;
+@property (weak, nonatomic) IBOutlet UIButton *agreeButton;
+@property (weak, nonatomic) IBOutlet UIButton *disagreeButton;
+@property (weak, nonatomic) IBOutlet UILabel *opinionTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *opinionStatsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *opinionUserLabel;
+@property (weak, nonatomic) IBOutlet UILabel *opinionCreatedAtLabel;
+@property (weak, nonatomic) IBOutlet UIButton *opinionUserButton;
+@property (weak, nonatomic) IBOutlet UIButton *opinionUserButton2;
+@property (weak, nonatomic) IBOutlet UIView *agreeBar;
+@property (weak, nonatomic) IBOutlet UIView *voteBar;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintOverlay;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintVotePercent;
 
-@property (strong, nonatomic) NSMutableDictionary *opinion;
+@property (weak, nonatomic) NSMutableDictionary *opinion;
 - (IBAction)touchAgree:(id)sender;
 - (IBAction)touchDisagree:(id)sender;
 
