@@ -45,6 +45,7 @@
 		88957A2719020B5D0065D35E /* QDCollectionOpinionLiteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A2619020B5D0065D35E /* QDCollectionOpinionLiteCell.m */; };
 		88957A2C1902108D0065D35E /* QDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A2B1902108D0065D35E /* QDProfileViewController.m */; };
 		88957A3A1902259C0065D35E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88957A3C1902259C0065D35E /* Localizable.strings */; };
+		88957A43190252480065D35E /* QDNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A42190252480065D35E /* QDNotificationViewController.m */; };
 		88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5004182FA8BC00E12C93 /* QDTabBarController.m */; };
 		88CE5007182FAAD300E12C93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE5006182FAAD300E12C93 /* FacebookSDK.framework */; };
 		88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0886718F582E900F1D72B /* QDLoginViewController.m */; };
@@ -204,6 +205,8 @@
 		88957A3B1902259C0065D35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		88957A3F19023E6D0065D35E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		88957A4019023E6F0065D35E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		88957A41190252480065D35E /* QDNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNotificationViewController.h; sourceTree = "<group>"; };
+		88957A42190252480065D35E /* QDNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNotificationViewController.m; sourceTree = "<group>"; };
 		88CE5003182FA8BC00E12C93 /* QDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarController.h; sourceTree = "<group>"; };
 		88CE5004182FA8BC00E12C93 /* QDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarController.m; sourceTree = "<group>"; };
 		88CE5006182FAAD300E12C93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -319,8 +322,8 @@
 		886716E8182D1C1400E863CB /* QuanDiem */ = {
 			isa = PBXGroup;
 			children = (
-				88F7311918FEF5970038F132 /* Components */,
 				88C43D7B18F845D300C60BFA /* UI */,
+				88F7311918FEF5970038F132 /* Components */,
 				88D0886518F582A500F1D72B /* Classes */,
 				88671700182D1C1400E863CB /* Images.xcassets */,
 				886716F4182D1C1400E863CB /* Main.storyboard */,
@@ -461,6 +464,8 @@
 				88F73197190046870038F132 /* QDPostOpinionViewController.m */,
 				88957A2A1902108D0065D35E /* QDProfileViewController.h */,
 				88957A2B1902108D0065D35E /* QDProfileViewController.m */,
+				88957A41190252480065D35E /* QDNotificationViewController.h */,
+				88957A42190252480065D35E /* QDNotificationViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -709,6 +714,7 @@
 				886717AE182D29C700E863CB /* AFHTTPRequestOperation.m in Sources */,
 				886717B1182D29C700E863CB /* AFNetworkReachabilityManager.m in Sources */,
 				88DA7CA11831264F00C83F70 /* Underscore+Functional.m in Sources */,
+				88957A43190252480065D35E /* QDNotificationViewController.m in Sources */,
 				88F73198190046870038F132 /* QDPostOpinionViewController.m in Sources */,
 				886717ED182D29C700E863CB /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */,

@@ -37,26 +37,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)touchFacebook:(id)sender {
-    [self openSession];
-}
-
-- (IBAction)touchTwitter:(id)sender {
-}
-
-- (IBAction)touchLogin:(id)sender {
-    
-}
-
 - (void)sessionStateChanged:(FBSession *)session
                       state:(FBSessionState) state
                       error:(NSError *)error
 {
     switch (state) {
         case FBSessionStateOpen:{
-            [[QDAPIClient sharedClient] POST:@"user/facebook" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                
-            } failure:nil];
+            [FBRequestConnection startForMeWithCompletionHandler:
+             ^(FBRequestConnection *connection, id result, NSError *error)
+             {
+                 NSDictionary *params = @{@"accessToken": session.accessTokenData.accessToken,
+                                          @"facebookId": result[@"id"]};
+                 [[QDAPIClient sharedClient] POST:@"user/facebooktoken" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                     [self dismissViewControllerAnimated:YES completion:nil];
+                 } failure:nil];
+             }];
+            
+            
         }
             break;
         case FBSessionStateClosed:
