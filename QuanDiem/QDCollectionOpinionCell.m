@@ -61,13 +61,9 @@
 - (void)setOpinion:(NSMutableDictionary *)opinion {
     _opinion = opinion;
     
-    NSString* opinionImageURL = [NSString stringWithFormat:@"%@%@%@", opinion[@"image"][@"cdnUri"],@"2x280-", opinion[@"image"][@"file"]];
-    NSString* userImageURL = [NSString stringWithFormat:@"%@%@%@", opinion[@"user"][@"image"][@"cdnUri"],@"2x24-", opinion[@"user"][@"image"][@"file"]];
-    NSString* userImage30URL = [NSString stringWithFormat:@"%@%@%@", opinion[@"user"][@"image"][@"cdnUri"],@"2x30-", opinion[@"user"][@"image"][@"file"]];
-    
-    [_opinionImageView setImageWithURL:[NSURL URLWithString:opinionImageURL] placeholderImage:nil];
-    [_userImageView setImageWithURL:[NSURL URLWithString:userImageURL] placeholderImage:nil];
-    [_opinionUserButton setImageForState:UIControlStateNormal withURL:[NSURL URLWithString:userImage30URL] placeholderImage:nil];
+    [_opinionButton setBackgroundImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:opinion ofSize:280]];
+    [_userImageView setImageWithURL:[QDUtils urlForImage:opinion[@"user"] ofSize:24] placeholderImage:nil];
+    [_opinionUserButton setImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:opinion[@"user"] ofSize:30] placeholderImage:nil];
     _opinionTitleLabel.text = _opinion[@"title"];
 
     _opinionUserButton.layer.cornerRadius = 15;

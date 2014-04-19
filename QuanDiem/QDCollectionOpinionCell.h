@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface QDCollectionOpinionCell : UICollectionViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *opinionImageView;
+@property (weak, nonatomic) IBOutlet UIButton *opinionButton;
+
 @property (strong, nonatomic) IBOutlet UIButton *agreeButton;
 @property (strong, nonatomic) IBOutlet UIButton *disagreeButton;
 @property (strong, nonatomic) IBOutlet UIImageView *userImageView;

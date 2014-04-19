@@ -9,6 +9,8 @@
 #import "QDCollectionOpinionController.h"
 #import "QDAPIClient.h"
 #import "QDCollectionOpinionCell.h"
+#import "QDOpinionViewController.h"
+
 #import "Underscore.h"
 
 @interface QDCollectionOpinionController ()
@@ -43,6 +45,9 @@
     if (categoryId) {
         [params setObject:categoryId forKey:@"category"];
     }
+    params[@"order"] = @"-createdAt";
+    params[@"range"] = @"year";
+    
     [[QDAPIClient sharedClient] GET:@"opinion" parameters:params success:^(AFHTTPRequestOperation *operation, id json) {
         opinions = json[@"opinions"];
         [self.collectionView reloadData];
@@ -68,6 +73,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     QDCollectionOpinionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"OpinionCell" forIndexPath:indexPath];
     cell.opinion = opinions[indexPath.item];
+    cell.opinionButton.tag = indexPath.item;
     return cell;
 }
 
@@ -109,9 +115,9 @@
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"OpinionHideStats"
-     object:self];
+//    [[NSNotificationCenter defaultCenter]
+//     postNotificationName:@"OpinionHideStats"
+//     object:self];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -119,4 +125,13 @@
      postNotificationName:@"OpinionShowStats"
      object:self];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Opinion"]) {
+        UIButton *btn = (UIButton*)sender;
+        QDOpinionViewController *opinionViewController = (QDOpinionViewController*)segue.destinationViewController;
+        opinionViewController.opinion = opinions[btn.tag];
+    }
+}
+
 @end

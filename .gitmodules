@@ -7,3 +7,6 @@
 [submodule "Vendors/RESideMenu"]
 	path = Vendors/RESideMenu
 	url = https://github.com/romaonthego/RESideMenu.git
+[submodule "Vendors/DTCoreText"]
+	path = Vendors/DTCoreText
+	url = https://github.com/Cocoanetics/DTCoreText.git

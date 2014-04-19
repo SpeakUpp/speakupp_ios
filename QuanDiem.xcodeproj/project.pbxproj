@@ -42,6 +42,7 @@
 		88671805182D2CE300E863CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671804182D2CE300E863CB /* Security.framework */; };
 		88671807182D2CEB00E863CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88671806182D2CEB00E863CB /* MobileCoreServices.framework */; };
 		8867180A182D2E6A00E863CB /* QDCollectionOpinionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671809182D2E6A00E863CB /* QDCollectionOpinionCell.m */; };
+		88957A1F1902022A0065D35E /* QDTableOpinionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A1D1902022A0065D35E /* QDTableOpinionCell.m */; };
 		88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5004182FA8BC00E12C93 /* QDTabBarController.m */; };
 		88CE5007182FAAD300E12C93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE5006182FAAD300E12C93 /* FacebookSDK.framework */; };
 		88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0886718F582E900F1D72B /* QDLoginViewController.m */; };
@@ -53,6 +54,17 @@
 		88DA7CA21831264F00C83F70 /* Underscore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7C8A1831264F00C83F70 /* Underscore.m */; };
 		88DA7CA31831264F00C83F70 /* USArrayWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7C8C1831264F00C83F70 /* USArrayWrapper.m */; };
 		88DA7CA41831264F00C83F70 /* USDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DA7C8F1831264F00C83F70 /* USDictionaryWrapper.m */; };
+		88F7311818FEEA300038F132 /* QDOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F7311718FEEA300038F132 /* QDOpinionViewController.m */; };
+		88F7311C18FEF5FE0038F132 /* QDTableCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F7311B18FEF5FE0038F132 /* QDTableCommentCell.m */; };
+		88F7311F190006AA0038F132 /* QDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F7311E190006AA0038F132 /* QDUtils.m */; };
+		88F7313F190022780038F132 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7313E190022780038F132 /* libxml2.dylib */; };
+		88F731411900228B0038F132 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F731401900228B0038F132 /* ImageIO.framework */; };
+		88F73143190022930038F132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F73142190022930038F132 /* QuartzCore.framework */; };
+		88F731451900229B0038F132 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F731441900229B0038F132 /* CoreText.framework */; };
+		88F73168190028A50038F132 /* libDTCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7315C190028720038F132 /* libDTCoreText.a */; };
+		88F7316A19002FE20038F132 /* comment.css in Resources */ = {isa = PBXBuildFile; fileRef = 88F7316919002FE20038F132 /* comment.css */; };
+		88F7319019003A190038F132 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F7318219003A190038F132 /* TTTAttributedLabel.m */; };
+		88F73198190046870038F132 /* QDPostOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F73197190046870038F132 /* QDPostOpinionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +74,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = 886716DE182D1C1400E863CB;
 			remoteInfo = QuanDiem;
+		};
+		88F73157190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = DemoApp;
+		};
+		88F73159190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A70F119B14863198009202BF;
+			remoteInfo = "Static Framework";
+		};
+		88F7315B190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A70F11DE148632CD009202BF;
+			remoteInfo = "Static Library";
+		};
+		88F7315D190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A788CA681486456100E1AFD9;
+			remoteInfo = UnitTest;
+		};
+		88F7315F190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7949A5814CC456000A8CCDE;
+			remoteInfo = MacUnitTest;
+		};
+		88F73161190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7F7EFCD1573603100F5A4D0;
+			remoteInfo = "Static Library (no DTFoundation)";
+		};
+		88F73163190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2262DC61638331500BFDAD7;
+			remoteInfo = "Mac Framework";
+		};
+		88F73165190028720038F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7A476BC180010F100459DFD;
+			remoteInfo = "BundleLoader Dummy";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -128,6 +196,8 @@
 		88671806182D2CEB00E863CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		88671808182D2E6A00E863CB /* QDCollectionOpinionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCollectionOpinionCell.h; sourceTree = "<group>"; };
 		88671809182D2E6A00E863CB /* QDCollectionOpinionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCollectionOpinionCell.m; sourceTree = "<group>"; };
+		88957A1C1902022A0065D35E /* QDTableOpinionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableOpinionCell.h; sourceTree = "<group>"; };
+		88957A1D1902022A0065D35E /* QDTableOpinionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableOpinionCell.m; sourceTree = "<group>"; };
 		88CE5003182FA8BC00E12C93 /* QDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarController.h; sourceTree = "<group>"; };
 		88CE5004182FA8BC00E12C93 /* QDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarController.m; sourceTree = "<group>"; };
 		88CE5006182FAAD300E12C93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -153,6 +223,22 @@
 		88DA7C8D1831264F00C83F70 /* USConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USConstants.h; sourceTree = "<group>"; };
 		88DA7C8E1831264F00C83F70 /* USDictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDictionaryWrapper.h; sourceTree = "<group>"; };
 		88DA7C8F1831264F00C83F70 /* USDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USDictionaryWrapper.m; sourceTree = "<group>"; };
+		88F7311618FEEA300038F132 /* QDOpinionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDOpinionViewController.h; sourceTree = "<group>"; };
+		88F7311718FEEA300038F132 /* QDOpinionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDOpinionViewController.m; sourceTree = "<group>"; };
+		88F7311A18FEF5FE0038F132 /* QDTableCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableCommentCell.h; sourceTree = "<group>"; };
+		88F7311B18FEF5FE0038F132 /* QDTableCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableCommentCell.m; sourceTree = "<group>"; };
+		88F7311D190006AA0038F132 /* QDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUtils.h; sourceTree = "<group>"; };
+		88F7311E190006AA0038F132 /* QDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUtils.m; sourceTree = "<group>"; };
+		88F731201900222F0038F132 /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Vendors/DTCoreText/DTCoreText.xcodeproj; sourceTree = "<group>"; };
+		88F7313E190022780038F132 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		88F731401900228B0038F132 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		88F73142190022930038F132 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		88F731441900229B0038F132 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		88F7316919002FE20038F132 /* comment.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = comment.css; sourceTree = "<group>"; };
+		88F7318119003A190038F132 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		88F7318219003A190038F132 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		88F73196190046870038F132 /* QDPostOpinionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDPostOpinionViewController.h; sourceTree = "<group>"; };
+		88F73197190046870038F132 /* QDPostOpinionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDPostOpinionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +246,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F73168190028A50038F132 /* libDTCoreText.a in Frameworks */,
+				88F731451900229B0038F132 /* CoreText.framework in Frameworks */,
+				88F73143190022930038F132 /* QuartzCore.framework in Frameworks */,
+				88F731411900228B0038F132 /* ImageIO.framework in Frameworks */,
+				88F7313F190022780038F132 /* libxml2.dylib in Frameworks */,
 				88671807182D2CEB00E863CB /* MobileCoreServices.framework in Frameworks */,
 				88671805182D2CE300E863CB /* Security.framework in Frameworks */,
 				88671803182D2CD800E863CB /* SystemConfiguration.framework in Frameworks */,
@@ -206,6 +297,11 @@
 		886716E1182D1C1400E863CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88F731201900222F0038F132 /* DTCoreText.xcodeproj */,
+				88F731441900229B0038F132 /* CoreText.framework */,
+				88F73142190022930038F132 /* QuartzCore.framework */,
+				88F731401900228B0038F132 /* ImageIO.framework */,
+				88F7313E190022780038F132 /* libxml2.dylib */,
 				88CE5006182FAAD300E12C93 /* FacebookSDK.framework */,
 				88671806182D2CEB00E863CB /* MobileCoreServices.framework */,
 				88671804182D2CE300E863CB /* Security.framework */,
@@ -221,6 +317,7 @@
 		886716E8182D1C1400E863CB /* QuanDiem */ = {
 			isa = PBXGroup;
 			children = (
+				88F7311918FEF5970038F132 /* Components */,
 				88C43D7B18F845D300C60BFA /* UI */,
 				88D0886518F582A500F1D72B /* Classes */,
 				88671700182D1C1400E863CB /* Images.xcassets */,
@@ -240,6 +337,7 @@
 				88CE5003182FA8BC00E12C93 /* QDTabBarController.h */,
 				88CE5004182FA8BC00E12C93 /* QDTabBarController.m */,
 				886716E9182D1C1400E863CB /* Supporting Files */,
+				88F7316919002FE20038F132 /* comment.css */,
 			);
 			path = QuanDiem;
 			sourceTree = "<group>";
@@ -274,6 +372,7 @@
 		88671721182D29C500E863CB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				88F7316B19003A180038F132 /* TTTAttributedLabel */,
 				88D0886918F5877D00F1D72B /* RESideMenu */,
 				88DA7C811831264F00C83F70 /* Underscore.m */,
 				88671724182D29C500E863CB /* AFNetworking */,
@@ -352,6 +451,12 @@
 				88D0886718F582E900F1D72B /* QDLoginViewController.m */,
 				88D088CD18F5A86F00F1D72B /* QDSettingViewController.h */,
 				88D088CE18F5A86F00F1D72B /* QDSettingViewController.m */,
+				88F7311618FEEA300038F132 /* QDOpinionViewController.h */,
+				88F7311718FEEA300038F132 /* QDOpinionViewController.m */,
+				88F7311D190006AA0038F132 /* QDUtils.h */,
+				88F7311E190006AA0038F132 /* QDUtils.m */,
+				88F73196190046870038F132 /* QDPostOpinionViewController.h */,
+				88F73197190046870038F132 /* QDPostOpinionViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -400,6 +505,49 @@
 				88DA7C8F1831264F00C83F70 /* USDictionaryWrapper.m */,
 			);
 			path = Underscore;
+			sourceTree = "<group>";
+		};
+		88F7311918FEF5970038F132 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88F7311A18FEF5FE0038F132 /* QDTableCommentCell.h */,
+				88F7311B18FEF5FE0038F132 /* QDTableCommentCell.m */,
+				88957A1C1902022A0065D35E /* QDTableOpinionCell.h */,
+				88957A1D1902022A0065D35E /* QDTableOpinionCell.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88F7314C190028720038F132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88F73158190028720038F132 /* RTDemoApp.app */,
+				88F7315A190028720038F132 /* DTCoreText.framework */,
+				88F7315C190028720038F132 /* libDTCoreText.a */,
+				88F7315E190028720038F132 /* UnitTest.octest */,
+				88F73160190028720038F132 /* MacUnitTest.octest */,
+				88F73162190028720038F132 /* libDTCoreText_no_DTFoundation.a */,
+				88F73164190028720038F132 /* DTCoreText.framework */,
+				88F73166190028720038F132 /* BundleLoaderDummy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88F7316B19003A180038F132 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				88F7318019003A190038F132 /* TTTAttributedLabel */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		88F7318019003A190038F132 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				88F7318119003A190038F132 /* TTTAttributedLabel.h */,
+				88F7318219003A190038F132 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +617,12 @@
 			mainGroup = 886716D6182D1C1400E863CB;
 			productRefGroup = 886716E0182D1C1400E863CB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88F7314C190028720038F132 /* Products */;
+					ProjectRef = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				886716DE182D1C1400E863CB /* QuanDiem */,
@@ -477,12 +631,72 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		88F73158190028720038F132 /* RTDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RTDemoApp.app;
+			remoteRef = 88F73157190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F7315A190028720038F132 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DTCoreText.framework;
+			remoteRef = 88F73159190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F7315C190028720038F132 /* libDTCoreText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText.a;
+			remoteRef = 88F7315B190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F7315E190028720038F132 /* UnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTest.octest;
+			remoteRef = 88F7315D190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F73160190028720038F132 /* MacUnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MacUnitTest.octest;
+			remoteRef = 88F7315F190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F73162190028720038F132 /* libDTCoreText_no_DTFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText_no_DTFoundation.a;
+			remoteRef = 88F73161190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F73164190028720038F132 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DTCoreText.framework;
+			remoteRef = 88F73163190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88F73166190028720038F132 /* BundleLoaderDummy.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BundleLoaderDummy.app;
+			remoteRef = 88F73165190028720038F132 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		886716DD182D1C1400E863CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88671701182D1C1400E863CB /* Images.xcassets in Resources */,
+				88F7316A19002FE20038F132 /* comment.css in Resources */,
 				886716F6182D1C1400E863CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +719,7 @@
 				886717AE182D29C700E863CB /* AFHTTPRequestOperation.m in Sources */,
 				886717B1182D29C700E863CB /* AFNetworkReachabilityManager.m in Sources */,
 				88DA7CA11831264F00C83F70 /* Underscore+Functional.m in Sources */,
+				88F73198190046870038F132 /* QDPostOpinionViewController.m in Sources */,
 				886717ED182D29C700E863CB /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */,
 				88671801182D2A6300E863CB /* QDAPIClient.m in Sources */,
@@ -513,18 +728,23 @@
 				886717B4182D29C700E863CB /* AFURLRequestSerialization.m in Sources */,
 				88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */,
 				88D088CF18F5A86F00F1D72B /* QDSettingViewController.m in Sources */,
+				88F7311818FEEA300038F132 /* QDOpinionViewController.m in Sources */,
 				88D088BC18F5877E00F1D72B /* RECommonFunctions.m in Sources */,
 				88D088BE18F5877E00F1D72B /* UIViewController+RESideMenu.m in Sources */,
 				886717F0182D29C700E863CB /* UIImageView+AFNetworking.m in Sources */,
+				88F7319019003A190038F132 /* TTTAttributedLabel.m in Sources */,
 				886716EF182D1C1400E863CB /* main.m in Sources */,
 				886717B5182D29C700E863CB /* AFURLResponseSerialization.m in Sources */,
+				88F7311C18FEF5FE0038F132 /* QDTableCommentCell.m in Sources */,
 				886717F2182D29C700E863CB /* UIWebView+AFNetworking.m in Sources */,
 				886717EE182D29C700E863CB /* UIAlertView+AFNetworking.m in Sources */,
+				88957A1F1902022A0065D35E /* QDTableOpinionCell.m in Sources */,
 				886716F3182D1C1400E863CB /* QDAppDelegate.m in Sources */,
 				88671720182D26B500E863CB /* QDCollectionOpinionController.m in Sources */,
 				88DA7CA21831264F00C83F70 /* Underscore.m in Sources */,
 				88DA7CA31831264F00C83F70 /* USArrayWrapper.m in Sources */,
 				886717AF182D29C700E863CB /* AFHTTPRequestOperationManager.m in Sources */,
+				88F7311F190006AA0038F132 /* QDUtils.m in Sources */,
 				886717B2182D29C700E863CB /* AFSecurityPolicy.m in Sources */,
 				886716FC182D1C1400E863CB /* QDFirstViewController.m in Sources */,
 				886717EF182D29C700E863CB /* UIButton+AFNetworking.m in Sources */,
@@ -654,7 +874,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuanDiem/QuanDiem-Prefix.pch";
 				INFOPLIST_FILE = "QuanDiem/QuanDiem-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Vendors/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -672,7 +894,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuanDiem/QuanDiem-Prefix.pch";
 				INFOPLIST_FILE = "QuanDiem/QuanDiem-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "Vendors/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

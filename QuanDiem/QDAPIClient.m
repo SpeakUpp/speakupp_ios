@@ -8,11 +8,11 @@
 
 #import "QDAPIClient.h"
 
-//#ifdef DEBUG
-//static NSString * const AFAppDotNetAPIBaseURLString = @"http://dev.quandiem.net:3000/api/";
-//#else
+#ifdef DEBUG
+static NSString * const AFAppDotNetAPIBaseURLString = @"http://dev.quandiem.net:3000/api/";
+#else
 static NSString * const AFAppDotNetAPIBaseURLString = @"http://quandiem.net/api/";
-//#endif
+#endif
 
 @implementation QDAPIClient
 

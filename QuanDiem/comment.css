@@ -1,0 +1,13 @@
+p { font-family:'Roboto','Helvetica Neue','Arial'; }
+ul {list-style:disc;}
+ul ul {list-style:circle;}
+ul, .cms ol {margin:0; padding:0 10px 0 30px;}
+ul li, .cms ol li {padding:0; margin:0 0 10px;}
+ul ul li, .cms ol ol li, .cms ol ul li, .cms ul ol li {margin:0;}
+p {padding:0; margin:0 0 10px;}
+blockquote {padding:5px 20px 0 24px; margin:0 20px 10px 0; opacity:0.7; background-image:url('/static/img/quote-open.png'),url('/static/img/quote-close.png'); background-position:0 0, 100% 100%; background-repeat:no-repeat; background-size:20px auto;}
+blockquote blockquote {opacity:1;}
+h1 {padding:0; margin:0 0 10px; font-size:22px;}
+h2 {padding:0; margin:0 0 10px; font-size:19px;}
+h3 {padding:0; margin:0 0 10px; font-size:16px;}
+hr {border:1px dotted #aaa; border-width:1px 0 0 0}
