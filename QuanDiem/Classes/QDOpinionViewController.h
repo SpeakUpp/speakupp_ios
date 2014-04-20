@@ -10,6 +10,10 @@
 
 @interface QDOpinionViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UILabel *opinionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *opinionButton;
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @property (strong, nonatomic) NSMutableDictionary *opinion;
 

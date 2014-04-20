@@ -31,6 +31,9 @@
 "COUNT_COMMENTS" = "%d comments";
 "COUNT_VOTE" = "%d vote";
 "COUNT_VOTES" = "%d votes";
+"COUNT_POINT" = "%d point";
+"COUNT_POINTS" = "%d points";
+
 "CREATE_NEW_ACCOUNT" = "Create a new account";
 "DELETE" = "Delete";
 "DELETE_COMMENT?" = "Delete this comment?";

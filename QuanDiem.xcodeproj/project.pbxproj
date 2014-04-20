@@ -46,6 +46,8 @@
 		88957A2C1902108D0065D35E /* QDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A2B1902108D0065D35E /* QDProfileViewController.m */; };
 		88957A3A1902259C0065D35E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88957A3C1902259C0065D35E /* Localizable.strings */; };
 		88957A43190252480065D35E /* QDNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A42190252480065D35E /* QDNotificationViewController.m */; };
+		88957A4A1903ED160065D35E /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957A491903ECFD0065D35E /* libMBProgressHUD.a */; };
+		88957A4D1903ED5F0065D35E /* QDVoteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A4C1903ED5F0065D35E /* QDVoteButton.m */; };
 		88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5004182FA8BC00E12C93 /* QDTabBarController.m */; };
 		88CE5007182FAAD300E12C93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE5006182FAAD300E12C93 /* FacebookSDK.framework */; };
 		88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0886718F582E900F1D72B /* QDLoginViewController.m */; };
@@ -76,6 +78,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 886716DE182D1C1400E863CB;
 			remoteInfo = QuanDiem;
+		};
+		88957A481903ECFD0065D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D286A7491518C70F00E13FB8;
+			remoteInfo = MBProgressHUD;
 		};
 		88F73157190028720038F132 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -207,6 +216,9 @@
 		88957A4019023E6F0065D35E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		88957A41190252480065D35E /* QDNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNotificationViewController.h; sourceTree = "<group>"; };
 		88957A42190252480065D35E /* QDNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNotificationViewController.m; sourceTree = "<group>"; };
+		88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = Vendors/MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
+		88957A4B1903ED5F0065D35E /* QDVoteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDVoteButton.h; sourceTree = "<group>"; };
+		88957A4C1903ED5F0065D35E /* QDVoteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDVoteButton.m; sourceTree = "<group>"; };
 		88CE5003182FA8BC00E12C93 /* QDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarController.h; sourceTree = "<group>"; };
 		88CE5004182FA8BC00E12C93 /* QDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarController.m; sourceTree = "<group>"; };
 		88CE5006182FAAD300E12C93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -251,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88957A4A1903ED160065D35E /* libMBProgressHUD.a in Frameworks */,
 				88F73168190028A50038F132 /* libDTCoreText.a in Frameworks */,
 				88F731451900229B0038F132 /* CoreText.framework in Frameworks */,
 				88F73143190022930038F132 /* QuartzCore.framework in Frameworks */,
@@ -302,6 +315,7 @@
 		886716E1182D1C1400E863CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */,
 				88F731201900222F0038F132 /* DTCoreText.xcodeproj */,
 				88F731441900229B0038F132 /* CoreText.framework */,
 				88F73142190022930038F132 /* QuartzCore.framework */,
@@ -442,9 +456,19 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		88957A451903ECFD0065D35E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88957A491903ECFD0065D35E /* libMBProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		88C43D7B18F845D300C60BFA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				88957A4B1903ED5F0065D35E /* QDVoteButton.h */,
+				88957A4C1903ED5F0065D35E /* QDVoteButton.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -616,6 +640,10 @@
 					ProductGroup = 88F7314C190028720038F132 /* Products */;
 					ProjectRef = 88F731201900222F0038F132 /* DTCoreText.xcodeproj */;
 				},
+				{
+					ProductGroup = 88957A451903ECFD0065D35E /* Products */;
+					ProjectRef = 88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -626,6 +654,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		88957A491903ECFD0065D35E /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 88957A481903ECFD0065D35E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		88F73158190028720038F132 /* RTDemoApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -734,6 +769,7 @@
 				886717F2182D29C700E863CB /* UIWebView+AFNetworking.m in Sources */,
 				886717EE182D29C700E863CB /* UIAlertView+AFNetworking.m in Sources */,
 				886716F3182D1C1400E863CB /* QDAppDelegate.m in Sources */,
+				88957A4D1903ED5F0065D35E /* QDVoteButton.m in Sources */,
 				88671720182D26B500E863CB /* QDCollectionOpinionController.m in Sources */,
 				88957A2C1902108D0065D35E /* QDProfileViewController.m in Sources */,
 				88DA7CA21831264F00C83F70 /* Underscore.m in Sources */,

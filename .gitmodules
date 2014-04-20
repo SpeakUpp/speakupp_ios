@@ -10,3 +10,6 @@
 [submodule "Vendors/DTCoreText"]
 	path = Vendors/DTCoreText
 	url = https://github.com/Cocoanetics/DTCoreText.git
+[submodule "Vendors/MBProgressHUD"]
+	path = Vendors/MBProgressHUD
+	url = https://github.com/jdg/MBProgressHUD.git

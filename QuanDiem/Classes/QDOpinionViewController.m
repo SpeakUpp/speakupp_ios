@@ -9,6 +9,7 @@
 #import "QDOpinionViewController.h"
 #import "QDTableCommentCell.h"
 #import "QDAPIClient.h"
+#import "UIButton+AFNetworking.h"
 
 @interface QDOpinionViewController ()
 
@@ -37,6 +38,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _opinionLabel.text = _opinion[@"title"];
+    _categoryLabel.text = _opinion[@"category"][@"title"];
+    _userLabel.text = _opinion[@"user"][@"displayName"];
+    _dateLabel.text = [QDUtils friendlyDate:_opinion[@"created"]];
+    
+    [_opinionButton setBackgroundImageForState:UIControlStateNormal withURL:[QDUtils urlForImage:_opinion ofSize:100]];
     
     NSDictionary *params = @{@"opinion": _opinion[@"_id"],
                              @"flatten": @"true",

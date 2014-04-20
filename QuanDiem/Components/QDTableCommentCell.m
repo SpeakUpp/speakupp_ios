@@ -24,6 +24,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
+    _buttonUser.layer.cornerRadius = 12;
 }
 
 - (void)setComment:(NSMutableDictionary *)comment {
@@ -46,7 +47,19 @@
                                                                documentAttributes:nil];
 
     _commentText.attributedString = attrString;
-
+    _labelPoint.text = [comment[@"score"] stringValue];
+    _labelUpVote.text = [comment[@"agreeCount"] stringValue];
+    _labelDownVote.text = [comment[@"disagreeCount"] stringValue];
+    
+    NSInteger score = [comment[@"score"] integerValue];
+    NSString *scoreString;
+    if (score > 1 ) {
+        scoreString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_POINTS", @"%d points"), score];
+    } else {
+        scoreString = [NSString stringWithFormat:NSLocalizedString(@"COUNT_POINT", @"%d point"), score];
+    }
+    _labelPoint.text = scoreString;
+    
     NSInteger depth = [comment[@"depth"] integerValue];
     _constraintTitleMarginLeft.constant = 20 * depth;
     _constraintCommentMarginLeft.constant = 20 * depth;

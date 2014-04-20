@@ -7,6 +7,7 @@
 //
 
 #import "QDAPIClient.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 #ifdef DEBUG
 static NSString * const AFAppDotNetAPIBaseURLString = @"http://dev.quandiem.net:3000/api/";
@@ -23,6 +24,7 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"http://quandiem.net/api/
         _sharedClient = [[QDAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
         _sharedClient.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions: NSJSONReadingMutableContainers];
         [_sharedClient setSecurityPolicy:[AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey]];
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     });
     
     return _sharedClient;

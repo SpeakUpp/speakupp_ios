@@ -9,6 +9,7 @@
 #import "QDLoginViewController.h"
 #import "QDAPIClient.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "MBProgressHUD.h"
 
 @interface QDLoginViewController ()
 
@@ -46,11 +47,12 @@
             [FBRequestConnection startForMeWithCompletionHandler:
              ^(FBRequestConnection *connection, id result, NSError *error)
              {
-                 NSDictionary *params = @{@"accessToken": session.accessTokenData.accessToken,
-                                          @"facebookId": result[@"id"]};
-                 [[QDAPIClient sharedClient] POST:@"user/facebooktoken" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                 NSDictionary *params = @{@"accessToken": session.accessTokenData.accessToken};
+                 [[QDAPIClient sharedClient] POST:@"user/loginfacebook" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
                      [self dismissViewControllerAnimated:YES completion:nil];
-                 } failure:nil];
+                 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                     
+                 }];
              }];
             
             
