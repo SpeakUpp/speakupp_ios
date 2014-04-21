@@ -13,3 +13,6 @@
 [submodule "Vendors/MBProgressHUD"]
 	path = Vendors/MBProgressHUD
 	url = https://github.com/jdg/MBProgressHUD.git
+[submodule "Vendors/socket.IO-objc"]
+	path = Vendors/socket.IO-objc
+	url = https://github.com/pkyeck/socket.IO-objc.git

@@ -48,6 +48,14 @@
 		88957A43190252480065D35E /* QDNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A42190252480065D35E /* QDNotificationViewController.m */; };
 		88957A4A1903ED160065D35E /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957A491903ECFD0065D35E /* libMBProgressHUD.a */; };
 		88957A4D1903ED5F0065D35E /* QDVoteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A4C1903ED5F0065D35E /* QDVoteButton.m */; };
+		88957A61190580960065D35E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957A60190580960065D35E /* CFNetwork.framework */; };
+		88957A63190580A60065D35E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957A62190580A60065D35E /* libicucore.dylib */; };
+		88957BFE1905859C0065D35E /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A6D1905859A0065D35E /* SocketIO.m */; };
+		88957BFF1905859C0065D35E /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A6F1905859A0065D35E /* SocketIOJSONSerialization.m */; };
+		88957C001905859C0065D35E /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A711905859A0065D35E /* SocketIOPacket.m */; };
+		88957C011905859C0065D35E /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A741905859A0065D35E /* SocketIOTransportWebsocket.m */; };
+		88957C021905859C0065D35E /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A761905859A0065D35E /* SocketIOTransportXHR.m */; };
+		88957D76190585E20065D35E /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957D6F190585D80065D35E /* libSocketRocket.a */; };
 		88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5004182FA8BC00E12C93 /* QDTabBarController.m */; };
 		88CE5007182FAAD300E12C93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE5006182FAAD300E12C93 /* FacebookSDK.framework */; };
 		88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0886718F582E900F1D72B /* QDLoginViewController.m */; };
@@ -85,6 +93,34 @@
 			proxyType = 2;
 			remoteGlobalIDString = D286A7491518C70F00E13FB8;
 			remoteInfo = MBProgressHUD;
+		};
+		88957D6E190585D80065D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88957D67190585D70065D35E /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		88957D70190585D80065D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88957D67190585D70065D35E /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		88957D72190585D80065D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88957D67190585D70065D35E /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		88957D74190585D80065D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88957D67190585D70065D35E /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
 		};
 		88F73157190028720038F132 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -219,6 +255,20 @@
 		88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = Vendors/MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		88957A4B1903ED5F0065D35E /* QDVoteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDVoteButton.h; sourceTree = "<group>"; };
 		88957A4C1903ED5F0065D35E /* QDVoteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDVoteButton.m; sourceTree = "<group>"; };
+		88957A60190580960065D35E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		88957A62190580A60065D35E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		88957A6C1905859A0065D35E /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		88957A6D1905859A0065D35E /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		88957A6E1905859A0065D35E /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		88957A6F1905859A0065D35E /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		88957A701905859A0065D35E /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		88957A711905859A0065D35E /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		88957A721905859A0065D35E /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		88957A731905859A0065D35E /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		88957A741905859A0065D35E /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		88957A751905859A0065D35E /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		88957A761905859A0065D35E /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		88957D67190585D70065D35E /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = "Vendors/socket.IO-objc/submodules/socket-rocket/SocketRocket.xcodeproj"; sourceTree = "<group>"; };
 		88CE5003182FA8BC00E12C93 /* QDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarController.h; sourceTree = "<group>"; };
 		88CE5004182FA8BC00E12C93 /* QDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarController.m; sourceTree = "<group>"; };
 		88CE5006182FAAD300E12C93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -263,6 +313,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88957D76190585E20065D35E /* libSocketRocket.a in Frameworks */,
+				88957A63190580A60065D35E /* libicucore.dylib in Frameworks */,
+				88957A61190580960065D35E /* CFNetwork.framework in Frameworks */,
 				88957A4A1903ED160065D35E /* libMBProgressHUD.a in Frameworks */,
 				88F73168190028A50038F132 /* libDTCoreText.a in Frameworks */,
 				88F731451900229B0038F132 /* CoreText.framework in Frameworks */,
@@ -315,6 +368,9 @@
 		886716E1182D1C1400E863CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88957D67190585D70065D35E /* SocketRocket.xcodeproj */,
+				88957A62190580A60065D35E /* libicucore.dylib */,
+				88957A60190580960065D35E /* CFNetwork.framework */,
 				88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */,
 				88F731201900222F0038F132 /* DTCoreText.xcodeproj */,
 				88F731441900229B0038F132 /* CoreText.framework */,
@@ -392,6 +448,7 @@
 		88671721182D29C500E863CB /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				88957A651905859A0065D35E /* socket.IO-objc */,
 				88D0886918F5877D00F1D72B /* RESideMenu */,
 				88DA7C811831264F00C83F70 /* Underscore.m */,
 				88671724182D29C500E863CB /* AFNetworking */,
@@ -460,6 +517,35 @@
 			isa = PBXGroup;
 			children = (
 				88957A491903ECFD0065D35E /* libMBProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88957A651905859A0065D35E /* socket.IO-objc */ = {
+			isa = PBXGroup;
+			children = (
+				88957A6C1905859A0065D35E /* SocketIO.h */,
+				88957A6D1905859A0065D35E /* SocketIO.m */,
+				88957A6E1905859A0065D35E /* SocketIOJSONSerialization.h */,
+				88957A6F1905859A0065D35E /* SocketIOJSONSerialization.m */,
+				88957A701905859A0065D35E /* SocketIOPacket.h */,
+				88957A711905859A0065D35E /* SocketIOPacket.m */,
+				88957A721905859A0065D35E /* SocketIOTransport.h */,
+				88957A731905859A0065D35E /* SocketIOTransportWebsocket.h */,
+				88957A741905859A0065D35E /* SocketIOTransportWebsocket.m */,
+				88957A751905859A0065D35E /* SocketIOTransportXHR.h */,
+				88957A761905859A0065D35E /* SocketIOTransportXHR.m */,
+			);
+			path = "socket.IO-objc";
+			sourceTree = "<group>";
+		};
+		88957D68190585D70065D35E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88957D6F190585D80065D35E /* libSocketRocket.a */,
+				88957D71190585D80065D35E /* SocketRocket.framework */,
+				88957D73190585D80065D35E /* SRWebSocketTests.octest */,
+				88957D75190585D80065D35E /* TestChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -644,6 +730,10 @@
 					ProductGroup = 88957A451903ECFD0065D35E /* Products */;
 					ProjectRef = 88957A441903ECFD0065D35E /* MBProgressHUD.xcodeproj */;
 				},
+				{
+					ProductGroup = 88957D68190585D70065D35E /* Products */;
+					ProjectRef = 88957D67190585D70065D35E /* SocketRocket.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -659,6 +749,34 @@
 			fileType = archive.ar;
 			path = libMBProgressHUD.a;
 			remoteRef = 88957A481903ECFD0065D35E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88957D6F190585D80065D35E /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = 88957D6E190585D80065D35E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88957D71190585D80065D35E /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = 88957D70190585D80065D35E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88957D73190585D80065D35E /* SRWebSocketTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.octest;
+			remoteRef = 88957D72190585D80065D35E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88957D75190585D80065D35E /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = 88957D74190585D80065D35E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		88F73158190028720038F132 /* RTDemoApp.app */ = {
@@ -761,12 +879,16 @@
 				88D088CF18F5A86F00F1D72B /* QDSettingViewController.m in Sources */,
 				88F7311818FEEA300038F132 /* QDOpinionViewController.m in Sources */,
 				88D088BC18F5877E00F1D72B /* RECommonFunctions.m in Sources */,
+				88957C001905859C0065D35E /* SocketIOPacket.m in Sources */,
 				88D088BE18F5877E00F1D72B /* UIViewController+RESideMenu.m in Sources */,
 				886717F0182D29C700E863CB /* UIImageView+AFNetworking.m in Sources */,
+				88957BFE1905859C0065D35E /* SocketIO.m in Sources */,
 				886716EF182D1C1400E863CB /* main.m in Sources */,
 				886717B5182D29C700E863CB /* AFURLResponseSerialization.m in Sources */,
 				88F7311C18FEF5FE0038F132 /* QDTableCommentCell.m in Sources */,
+				88957C021905859C0065D35E /* SocketIOTransportXHR.m in Sources */,
 				886717F2182D29C700E863CB /* UIWebView+AFNetworking.m in Sources */,
+				88957BFF1905859C0065D35E /* SocketIOJSONSerialization.m in Sources */,
 				886717EE182D29C700E863CB /* UIAlertView+AFNetworking.m in Sources */,
 				886716F3182D1C1400E863CB /* QDAppDelegate.m in Sources */,
 				88957A4D1903ED5F0065D35E /* QDVoteButton.m in Sources */,
@@ -785,6 +907,7 @@
 				88D088BD18F5877E00F1D72B /* RESideMenu.m in Sources */,
 				886717EC182D29C700E863CB /* AFNetworkActivityIndicatorManager.m in Sources */,
 				886716FF182D1C1400E863CB /* QDSecondViewController.m in Sources */,
+				88957C011905859C0065D35E /* SocketIOTransportWebsocket.m in Sources */,
 				886717B0182D29C700E863CB /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

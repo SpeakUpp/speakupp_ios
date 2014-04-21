@@ -28,15 +28,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveNotificationCount:)
+                                                 name:@"notification:new"
+                                               object:nil];
+    
     [[QDAPIClient sharedClient] GET:@"site/config" parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *config) {
         NSDictionary *user = config[@"user"];
         if (!user) {
             [self performSegueWithIdentifier:@"Login" sender:self];
         }
-        UIViewController *tmp = self.viewControllers[2];
-        tmp.tabBarItem.badgeValue = @"5";
+        
         
     } failure:nil];
+}
+
+- (void)receiveNotificationCount:(NSNotification*)notification {
+    UIViewController *tmp = self.viewControllers[2];
+    NSInteger count = [notification.object[@"newNotifications"] integerValue];
+    if (count > 0) {
+        tmp.tabBarItem.badgeValue = [notification.object[@"newNotifications"] stringValue];
+    } else {
+        tmp.tabBarItem.badgeValue = nil;
+    }
+    
 }
 
 

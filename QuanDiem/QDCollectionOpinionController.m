@@ -46,8 +46,8 @@
     if (categoryId) {
         [params setObject:categoryId forKey:@"category"];
     }
-    params[@"order"] = @"-createdAt";
-    params[@"range"] = @"year";
+    params[@"sort"] = @"-hotScore";
+    params[@"range"] = @"all";
     
     [[QDAPIClient sharedClient] GET:@"opinion" parameters:params success:^(AFHTTPRequestOperation *operation, id json) {
         opinions = json[@"opinions"];

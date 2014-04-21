@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonUser;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTitleMarginLeft;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintCommentHeight;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintCommentMarginLeft;
 @property (weak, nonatomic) IBOutlet UILabel *labelUpVote;
 @property (weak, nonatomic) IBOutlet UILabel *labelPoint;
