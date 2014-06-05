@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "886716DE182D1C1400E863CB"
-               BuildableName = "QuanDiem.app"
-               BlueprintName = "QuanDiem"
+               BuildableName = "SpeakUpp.app"
+               BlueprintName = "SpeakUpp"
                ReferencedContainer = "container:QuanDiem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "88671705182D1C1500E863CB"
-               BuildableName = "QuanDiemTests.xctest"
-               BlueprintName = "QuanDiemTests"
+               BuildableName = "SpeakUppTests.xctest"
+               BlueprintName = "SpeakUppTests"
                ReferencedContainer = "container:QuanDiem.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886716DE182D1C1400E863CB"
-            BuildableName = "QuanDiem.app"
-            BlueprintName = "QuanDiem"
+            BuildableName = "SpeakUpp.app"
+            BlueprintName = "SpeakUpp"
             ReferencedContainer = "container:QuanDiem.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886716DE182D1C1400E863CB"
-            BuildableName = "QuanDiem.app"
-            BlueprintName = "QuanDiem"
+            BuildableName = "SpeakUpp.app"
+            BlueprintName = "SpeakUpp"
             ReferencedContainer = "container:QuanDiem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886716DE182D1C1400E863CB"
-            BuildableName = "QuanDiem.app"
-            BlueprintName = "QuanDiem"
+            BuildableName = "SpeakUpp.app"
+            BlueprintName = "SpeakUpp"
             ReferencedContainer = "container:QuanDiem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

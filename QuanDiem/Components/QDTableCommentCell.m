@@ -24,7 +24,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    _buttonUser.layer.cornerRadius = 12;
+    // _buttonUser.layer.cornerRadius = 12;
 }
 
 - (void)setComment:(NSMutableDictionary *)comment {

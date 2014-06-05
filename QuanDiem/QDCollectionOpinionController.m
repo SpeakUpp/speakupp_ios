@@ -73,6 +73,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     QDCollectionOpinionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"OpinionCell" forIndexPath:indexPath];
+    
     cell.opinion = opinions[indexPath.item];
     cell.opinionButton.tag = indexPath.item;
     cell.opinionUserButton.tag = indexPath.item;

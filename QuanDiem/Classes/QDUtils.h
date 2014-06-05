@@ -12,5 +12,6 @@
 
 + (NSURL*)urlForImage:(NSDictionary*)object ofSize:(NSInteger)size;
 + (NSString*)friendlyDate:(NSString*)dateString;
++ (UIImage *)imageWithColor:(UIColor *)color;
 
 @end

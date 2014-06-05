@@ -7,9 +7,8 @@
 //
 
 #import "AFHTTPRequestOperationManager.h"
-#import "SocketIO.h"
 
-@interface QDAPIClient : AFHTTPRequestOperationManager<SocketIODelegate>
+@interface QDAPIClient : AFHTTPRequestOperationManager
 
 + (instancetype)sharedClient;
 @end

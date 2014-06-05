@@ -56,6 +56,8 @@
 		88957C011905859C0065D35E /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A741905859A0065D35E /* SocketIOTransportWebsocket.m */; };
 		88957C021905859C0065D35E /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 88957A761905859A0065D35E /* SocketIOTransportXHR.m */; };
 		88957D76190585E20065D35E /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88957D6F190585D80065D35E /* libSocketRocket.a */; };
+		88B3A3571908076800A8A544 /* QDSocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B3A3561908076800A8A544 /* QDSocketIO.m */; };
+		88B3A3681909347A00A8A544 /* QDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B3A3671909347A00A8A544 /* QDNavigationBar.m */; };
 		88CE5005182FA8BC00E12C93 /* QDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5004182FA8BC00E12C93 /* QDTabBarController.m */; };
 		88CE5007182FAAD300E12C93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CE5006182FAAD300E12C93 /* FacebookSDK.framework */; };
 		88D0886818F582E900F1D72B /* QDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D0886718F582E900F1D72B /* QDLoginViewController.m */; };
@@ -181,7 +183,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		886716DF182D1C1400E863CB /* QuanDiem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuanDiem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		886716DF182D1C1400E863CB /* SpeakUpp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakUpp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886716E2182D1C1400E863CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		886716E4182D1C1400E863CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		886716E6182D1C1400E863CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -196,7 +198,7 @@
 		886716FD182D1C1400E863CB /* QDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDSecondViewController.h; sourceTree = "<group>"; };
 		886716FE182D1C1400E863CB /* QDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDSecondViewController.m; sourceTree = "<group>"; };
 		88671700182D1C1400E863CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		88671706182D1C1500E863CB /* QuanDiemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuanDiemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88671706182D1C1500E863CB /* SpeakUppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeakUppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88671707182D1C1500E863CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8867170F182D1C1500E863CB /* QuanDiemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuanDiemTests-Info.plist"; sourceTree = "<group>"; };
 		88671713182D1C1500E863CB /* QuanDiemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuanDiemTests.m; sourceTree = "<group>"; };
@@ -269,6 +271,10 @@
 		88957A751905859A0065D35E /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
 		88957A761905859A0065D35E /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
 		88957D67190585D70065D35E /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = "Vendors/socket.IO-objc/submodules/socket-rocket/SocketRocket.xcodeproj"; sourceTree = "<group>"; };
+		88B3A3551908076800A8A544 /* QDSocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSocketIO.h; sourceTree = "<group>"; };
+		88B3A3561908076800A8A544 /* QDSocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSocketIO.m; sourceTree = "<group>"; };
+		88B3A3661909347A00A8A544 /* QDNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBar.h; sourceTree = "<group>"; };
+		88B3A3671909347A00A8A544 /* QDNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBar.m; sourceTree = "<group>"; };
 		88CE5003182FA8BC00E12C93 /* QDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarController.h; sourceTree = "<group>"; };
 		88CE5004182FA8BC00E12C93 /* QDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarController.m; sourceTree = "<group>"; };
 		88CE5006182FAAD300E12C93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -350,8 +356,8 @@
 			children = (
 				886716E1182D1C1400E863CB /* Frameworks */,
 				886716E0182D1C1400E863CB /* Products */,
-				886716E8182D1C1400E863CB /* QuanDiem */,
-				8867170D182D1C1500E863CB /* QuanDiemTests */,
+				886716E8182D1C1400E863CB /* SpeakUpp */,
+				8867170D182D1C1500E863CB /* SpeakUppTests */,
 				88671721182D29C500E863CB /* Vendors */,
 			);
 			sourceTree = "<group>";
@@ -359,8 +365,8 @@
 		886716E0182D1C1400E863CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				886716DF182D1C1400E863CB /* QuanDiem.app */,
-				88671706182D1C1500E863CB /* QuanDiemTests.xctest */,
+				886716DF182D1C1400E863CB /* SpeakUpp.app */,
+				88671706182D1C1500E863CB /* SpeakUppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,13 +395,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		886716E8182D1C1400E863CB /* QuanDiem */ = {
+		886716E8182D1C1400E863CB /* SpeakUpp */ = {
 			isa = PBXGroup;
 			children = (
-				88C43D7B18F845D300C60BFA /* UI */,
-				88F7311918FEF5970038F132 /* Components */,
 				88D0886518F582A500F1D72B /* Classes */,
+				88F7316919002FE20038F132 /* comment.css */,
+				88F7311918FEF5970038F132 /* Components */,
 				88671700182D1C1400E863CB /* Images.xcassets */,
+				88957A3C1902259C0065D35E /* Localizable.strings */,
 				886716F4182D1C1400E863CB /* Main.storyboard */,
 				886717FF182D2A6300E863CB /* QDAPIClient.h */,
 				88671800182D2A6300E863CB /* QDAPIClient.m */,
@@ -409,12 +416,14 @@
 				886716FB182D1C1400E863CB /* QDFirstViewController.m */,
 				886716FD182D1C1400E863CB /* QDSecondViewController.h */,
 				886716FE182D1C1400E863CB /* QDSecondViewController.m */,
+				88B3A3551908076800A8A544 /* QDSocketIO.h */,
+				88B3A3561908076800A8A544 /* QDSocketIO.m */,
 				88CE5003182FA8BC00E12C93 /* QDTabBarController.h */,
 				88CE5004182FA8BC00E12C93 /* QDTabBarController.m */,
 				886716E9182D1C1400E863CB /* Supporting Files */,
-				88F7316919002FE20038F132 /* comment.css */,
-				88957A3C1902259C0065D35E /* Localizable.strings */,
+				88C43D7B18F845D300C60BFA /* UI */,
 			);
+			name = SpeakUpp;
 			path = QuanDiem;
 			sourceTree = "<group>";
 		};
@@ -428,12 +437,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8867170D182D1C1500E863CB /* QuanDiemTests */ = {
+		8867170D182D1C1500E863CB /* SpeakUppTests */ = {
 			isa = PBXGroup;
 			children = (
 				88671713182D1C1500E863CB /* QuanDiemTests.m */,
 				8867170E182D1C1500E863CB /* Supporting Files */,
 			);
+			name = SpeakUppTests;
 			path = QuanDiemTests;
 			sourceTree = "<group>";
 		};
@@ -555,6 +565,8 @@
 			children = (
 				88957A4B1903ED5F0065D35E /* QDVoteButton.h */,
 				88957A4C1903ED5F0065D35E /* QDVoteButton.m */,
+				88B3A3661909347A00A8A544 /* QDNavigationBar.h */,
+				88B3A3671909347A00A8A544 /* QDNavigationBar.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -655,9 +667,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		886716DE182D1C1400E863CB /* QuanDiem */ = {
+		886716DE182D1C1400E863CB /* SpeakUpp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88671717182D1C1500E863CB /* Build configuration list for PBXNativeTarget "QuanDiem" */;
+			buildConfigurationList = 88671717182D1C1500E863CB /* Build configuration list for PBXNativeTarget "SpeakUpp" */;
 			buildPhases = (
 				886716DB182D1C1400E863CB /* Sources */,
 				886716DC182D1C1400E863CB /* Frameworks */,
@@ -667,14 +679,14 @@
 			);
 			dependencies = (
 			);
-			name = QuanDiem;
+			name = SpeakUpp;
 			productName = QuanDiem;
-			productReference = 886716DF182D1C1400E863CB /* QuanDiem.app */;
+			productReference = 886716DF182D1C1400E863CB /* SpeakUpp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		88671705182D1C1500E863CB /* QuanDiemTests */ = {
+		88671705182D1C1500E863CB /* SpeakUppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8867171A182D1C1500E863CB /* Build configuration list for PBXNativeTarget "QuanDiemTests" */;
+			buildConfigurationList = 8867171A182D1C1500E863CB /* Build configuration list for PBXNativeTarget "SpeakUppTests" */;
 			buildPhases = (
 				88671702182D1C1500E863CB /* Sources */,
 				88671703182D1C1500E863CB /* Frameworks */,
@@ -685,9 +697,9 @@
 			dependencies = (
 				8867170C182D1C1500E863CB /* PBXTargetDependency */,
 			);
-			name = QuanDiemTests;
+			name = SpeakUppTests;
 			productName = QuanDiemTests;
-			productReference = 88671706182D1C1500E863CB /* QuanDiemTests.xctest */;
+			productReference = 88671706182D1C1500E863CB /* SpeakUppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -737,8 +749,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				886716DE182D1C1400E863CB /* QuanDiem */,
-				88671705182D1C1500E863CB /* QuanDiemTests */,
+				886716DE182D1C1400E863CB /* SpeakUpp */,
+				88671705182D1C1500E863CB /* SpeakUppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -885,6 +897,7 @@
 				88957BFE1905859C0065D35E /* SocketIO.m in Sources */,
 				886716EF182D1C1400E863CB /* main.m in Sources */,
 				886717B5182D29C700E863CB /* AFURLResponseSerialization.m in Sources */,
+				88B3A3681909347A00A8A544 /* QDNavigationBar.m in Sources */,
 				88F7311C18FEF5FE0038F132 /* QDTableCommentCell.m in Sources */,
 				88957C021905859C0065D35E /* SocketIOTransportXHR.m in Sources */,
 				886717F2182D29C700E863CB /* UIWebView+AFNetworking.m in Sources */,
@@ -899,6 +912,7 @@
 				88957A2719020B5D0065D35E /* QDCollectionOpinionLiteCell.m in Sources */,
 				886717AF182D29C700E863CB /* AFHTTPRequestOperationManager.m in Sources */,
 				88F7311F190006AA0038F132 /* QDUtils.m in Sources */,
+				88B3A3571908076800A8A544 /* QDSocketIO.m in Sources */,
 				886717B2182D29C700E863CB /* AFSecurityPolicy.m in Sources */,
 				886716FC182D1C1400E863CB /* QDFirstViewController.m in Sources */,
 				886717EF182D29C700E863CB /* UIButton+AFNetworking.m in Sources */,
@@ -925,7 +939,7 @@
 /* Begin PBXTargetDependency section */
 		8867170C182D1C1500E863CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 886716DE182D1C1400E863CB /* QuanDiem */;
+			target = 886716DE182D1C1400E863CB /* SpeakUpp */;
 			targetProxy = 8867170B182D1C1500E863CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1116,7 +1130,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88671717182D1C1500E863CB /* Build configuration list for PBXNativeTarget "QuanDiem" */ = {
+		88671717182D1C1500E863CB /* Build configuration list for PBXNativeTarget "SpeakUpp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88671718182D1C1500E863CB /* Debug */,
@@ -1125,7 +1139,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8867171A182D1C1500E863CB /* Build configuration list for PBXNativeTarget "QuanDiemTests" */ = {
+		8867171A182D1C1500E863CB /* Build configuration list for PBXNativeTarget "SpeakUppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8867171B182D1C1500E863CB /* Debug */,

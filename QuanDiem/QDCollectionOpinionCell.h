@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintVotePercent;
 
 @property (weak, nonatomic) NSMutableDictionary *opinion;
+
 - (IBAction)touchAgree:(id)sender;
 - (IBAction)touchDisagree:(id)sender;
 
